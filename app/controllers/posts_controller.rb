@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def update
     set_post!
 
-    if @post.valid?
+    if @post.update(post_params)?
       @post.update(post_params)
 
       redirect_to post_path(@post)
