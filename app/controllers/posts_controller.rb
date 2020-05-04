@@ -9,7 +9,7 @@ class PostsController < ApplicationController
 
   def update
     set_post!
-    
+
     if post_params.valid?
       @post.update(post_params)
 
