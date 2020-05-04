@@ -9,7 +9,7 @@ class PostsController < ApplicationController
 
   def update
     set_post!
-
+    binding.pry
     if
       @post.update(post_params)
 
